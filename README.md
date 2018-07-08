@@ -15,13 +15,13 @@ pipsi is not meant for installing libraries that will be imported by other Pytho
 ## How do I get it?
 
 ```bash
-curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python
+curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python3 - --src 'git+https://github.com/mitsuhiko/pipsi.git#egg=pipsi'
 ```
 
 to see installation options, including not automatically modifying the PATH environment variable
 
 ```bash
-curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python - --help
+curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python3 - --help --src 'git+https://github.com/mitsuhiko/pipsi.git#egg=pipsi'
 ```
 
 ## How does it work?
